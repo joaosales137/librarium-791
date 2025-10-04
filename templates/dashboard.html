@@ -1,0 +1,20 @@
+<!-- Importa o layout base do HTML -->
+{% extends 'layout.html' %}
+
+<!-- Define o título dinâmico -->
+{% block title %} Painel Gerencial {% endblock %}
+
+<!-- Define o conteúdo dinâmico -->
+{% block content %}
+
+    <div class="col-sm-11 col-lg-6 card p-5 my-5">
+
+        <h3>Bem-vindo(a), {{ session.user_name }}</h3>
+        <br>
+        <p>
+            Utilize o menu de navegação acima para gerenciar
+            usuários, livros, empréstimos e devoluções...
+        </p>
+    </div>
+    
+{% endblock %}
